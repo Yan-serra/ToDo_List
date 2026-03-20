@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trabalho WEB</title>
+        <link rel="stylesheet" href="stlyle.css">
+    </head>
+    <body>
+        <div id="formulario">
+       <form id="meuform">
+            <input type="text" id="titulo" placeholder="Titulo"> <br>
+            <input type="text" id="descricaotarefa" placeholder="Descrição da Tarefa">
+            <br>
+            <br>
+        </form>
+
+       <select id="prioridades">
+            <option value="alta">Alta prioridade</option>
+            <option value="media">Média prioridade</option>
+            <option value="baixa">Baixa prioridade</option>
+       </select>
+        <br>
+       <button onclick="AddTarefa()" >Adicionar tarefa</button>
+        
+       <br>
+       <br>
+
+       <input type="text" id="pesquisar" placeholder="Pesquise sua Tarefa" onkeyup="PesquisesuaTarefa()">
+       
+       <ul id="lista">
+       </ul>
+
+    </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>

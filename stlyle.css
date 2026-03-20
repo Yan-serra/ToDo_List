@@ -1,0 +1,56 @@
+body{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
+}
+
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    max-width: 200px;
+    
+}
+
+#prioridades{
+    background-color: #FFDEAD;
+    border: none;
+    padding: 3px 20%;
+    border-radius: 5px;
+    font-size: 80%;
+}
+
+#titulo,
+#pesquisar,
+#descricaotarefa{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 200px;
+    background-color:#FFDEAD;
+    border-radius:5px;
+    font-size: 90%;
+    font-family: serif;
+    color: black ;
+    border: 1px solid #FFDEAD;
+    padding: 5px 2px;
+    text-align: center;
+}
+
+
+button{
+    margin-top: 0 auto;
+    background-color:#FFDEAD;
+    border: none;
+    padding: 5px 15px;
+    font-size: 90%;
+    border-radius: 5px;
+    text-decoration:none;
+}
+button:hover{
+    background: #00FA9A;
+}
