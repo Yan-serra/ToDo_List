@@ -54,6 +54,7 @@ function lista(){
         <button onclick = "toggleStatus(${index})"> Alterar Status </button>
         <button onclick = "editarTarefa(${index})"> Editar </button>
 
+        
         `;
 
         lista.appendChild(item);
