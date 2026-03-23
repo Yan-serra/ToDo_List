@@ -2,8 +2,8 @@ body{
     background-color: beige;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 50vh;
+    align-items:flex-start;
+    min-height: 100vh;
 
 }
 
