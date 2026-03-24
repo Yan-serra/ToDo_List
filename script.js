@@ -59,10 +59,10 @@ function lista(){
         <p>Status: ${tarefa.status}</p>
 
         
-        <button onclick = "concluirTarefa(${index})"> Concluir </button>
-        <button onclick = "remove(${index})"> Remover </button>
-        <button onclick = "toggleStatus(${index})"> Alterar Status </button>
-        <button onclick = "editarTarefa(${index})"> Editar </button>
+        <button class="btn-concluir" onclick = "concluirTarefa(${index})"> Concluir </button>
+        <button class="btn-remover" onclick = "remove(${index})"> Remover </button>
+        <button class="btn-alterar" onclick = "toggleStatus(${index})"> Alterar Status </button>
+        <button class="btn-editar" onclick = "editarTarefa(${index})"> Editar </button>
 
         
         `;
