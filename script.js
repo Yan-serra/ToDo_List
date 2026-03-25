@@ -125,7 +125,7 @@ function remove(index){
 
 // FUNÇÃO PARA ALTERAR O STATUS ENTRE PENDENTE E CONLUIDA
 function toggleStatus(index){
-    tarefas[index].status = tarefas[index].status === "Pendente" ? "Concluída" : "Pendente";
+    tarefas[index].status = tarefas[index].status === "Pendente" ? "Em progresso": "Pendente";
     salvaTarefa();
     lista();
 }
