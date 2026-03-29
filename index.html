@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8"> <!-- Define os caracteres  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--  Define a responsividade para mobiles -->
         <title>Trabalho WEB</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
     </head>
     <body>
 
+        <!-- Título da página -->
         <h1 class="titulo">Lista de Tarefas ToDo_List</h1>
 
-        <div id="formulario">
-       <form id="meuform">
+        <div id="formulario"> <!-- Container do formulario-->
+
+        <!-- Formulario com campos para inserir tarefas -->
+       <form>
             <input type="text" id="titulo" placeholder="Titulo"> <br>
             <input type="text" id="descricaotarefa" placeholder="Descrição da Tarefa">
             <br>
             <br>
         </form>
 
+        <!-- Seleção de prioridade -->
        <select id="prioridades">
             <option value="alta">Alta prioridade</option>
             <option value="media">Média prioridade</option>
             <option value="baixa">Baixa prioridade</option>
        </select>
         <br>
-       <button onclick="addTarefa()" >Adicionar tarefa</button>
         
+        <!-- Botão para adicionar tarefa -->
+       <button onclick="addTarefa()" >Adicionar tarefa</button>
        <br>
        <br>
 
+       <!-- Campo para pesquisar tarefas -->
        <input type="text" id="pesquisar" placeholder="Pesquise sua Tarefa" onkeyup="PesquisaTarefa()">
+
+       <!-- Botão para pesquisar tarefas -->
        <button class="btn-pesquisar" onclick="PesquisaTarefa()">Pesquisar</button>
        
-       <ul id="lista">
-       </ul>
-
     </div>
 
+    <!-- Lista onde as tarefas serão exibidas -->
+    <ul id="lista"></ul>
+       
         
-        <script src="script.js"></script>
+        <script src="script.js"></script>  <!-- Link para o arquivo JS -->
     </body>
 </html>

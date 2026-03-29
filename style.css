@@ -1,9 +1,18 @@
+/* Configuração geral da tela */
 body{
     background-color: beige;
+    max-width: 1200px;
     min-height: 100vh;
+    margin: 0 auto;
     padding: 10px;
 }
 
+/* Configuração para todos os elementos da pagina */
+*{
+    box-sizing: border-box;
+}
+
+/* Titulo principal */
 .titulo{
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -12,23 +21,29 @@ body{
     margin: 0 auto;
     padding: 20px 20px;
 }
+/* Efeito ao passar o mouse no titulo */
 .titulo:hover{
     color: rgba(41, 39, 39, 0.5)
 }
 
+/* Configuração do formulario */
 #formulario{
     width:100%;
     max-width: 300px;
     margin: 0 auto;
 }
 
+/* Configuração da lista de tarefas adicionadas */
 #lista{
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 0;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+    max-width: 1200px;
+   margin: 40px auto;
+    
 }
 
+/* Configuração das prioridades */
 #prioridades{
     background-color: #FFDEAD;
     border: none;
@@ -39,6 +54,7 @@ body{
     max-width: 300px;
 }
 
+/* Configuração dos campos para inserir as tarefas */
 #titulo,
 #pesquisar,
 #descricaotarefa{
@@ -56,23 +72,41 @@ body{
     text-align: center;
 }
 
+/* Configuração das tarefas em formato de card */
 li{
     width: 100%;
-    padding: 20px;
-    max-width: 300px;
+    max-width: 100%;
+    padding: 15px;
     background: #f1eadb;
     border-radius: 10px;
-    margin-bottom: 30px;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.4);
-    margin-top: 25px;
 }
 
+/* Animação do card */
+li {
+    animation: aparecer 0.7s ease;
+}
+
+/* Define da animação do card */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Configuração para remover os " . " padrão da lista */
 ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* Configuração geral para "todos" os botões da pagina */
 button{
     display: block;
     width: 100%;
@@ -85,51 +119,27 @@ button{
     border-radius: 30px;
 }
 
+/* Efeito ao passar o mouse no botão de adicionar */
 button:hover{
     background: hsla(157, 90%, 45%, 0.710);
 }
 
+/* Efeito ao passar o mouse no botão de pesquisar */
 .btn-pesquisar:hover{
     background: hsla(219, 100%, 48%, 0.710);
 }
 
+/* Efeito ao passar o mouse no botão de remover */
 .btn-remover:hover{
   background: rgba(255, 0, 0, 0.710);
 }
 
+/* Efeito ao passar o mouse no botão de alterar */
 .btn-alterar:hover{
     background: rgba(218, 218, 4, 0.71);
 }
 
+/* Efeito ao passar o mouse no botão de editar */
 .btn-editar:hover{
     background: rgba(0, 255, 255, 0.710);
-}
-
-li {
-    animation: aparecer 0.7s ease;
-}
-
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@media(min-width: 600px){
-    #formulario,
-    #lista{
-        max-width: 300px;
-    }
-    li{
-        max-width: 300px;
-    }
-    button{
-        width: 100%;
-        max-width: 150px;
-    }
 }
