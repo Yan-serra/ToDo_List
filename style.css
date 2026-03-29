@@ -1,6 +1,7 @@
 body{
     background-color: beige;
     min-height: 100vh;
+    padding: 10px;
 }
 
 .titulo{
@@ -116,5 +117,19 @@ li {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media(min-width: 600px){
+    #formulario,
+    #lista{
+        max-width: 300px;
+    }
+    li{
+        max-width: 300px;
+    }
+    button{
+        width: 100%;
+        max-width: 150px;
     }
 }
